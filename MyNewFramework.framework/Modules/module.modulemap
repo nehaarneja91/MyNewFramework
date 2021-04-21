@@ -1,0 +1,11 @@
+framework module MyNewFramework {
+  umbrella header "MyNewFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module MyNewFramework.Swift {
+    header "MyNewFramework-Swift.h"
+    requires objc
+}
